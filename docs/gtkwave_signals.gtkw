@@ -1,0 +1,57 @@
+[*]
+[*] GTKWave signal save file — MIPS Pipeline + Branch Predictor
+[*] Load with: gtkwave sim/mips_wave.vcd docs/gtkwave_signals.gtkw
+[*]
+[dumpfile] "sim/mips_wave.vcd"
+[dumpfile_mtime] "0"
+[dumpfile_size] 0
+[savefile] "docs/gtkwave_signals.gtkw"
+[timestart] 0
+*-25.175016 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_mips_pipeline.
+[treeopen] tb_mips_pipeline.dut.
+@28
+tb_mips_pipeline.dut.clk
+@8
+tb_mips_pipeline.cycle_count[31:0]
+@28
+-
+@28
+----- IF Stage -----
+@8
+tb_mips_pipeline.dut.pc[31:0]
+tb_mips_pipeline.dut.instr[31:0]
+@28
+-
+----- Hazard / Branch -----
+@28
+tb_mips_pipeline.dut.stall
+tb_mips_pipeline.dut.branch_taken
+tb_mips_pipeline.dut.flush_if_id
+tb_mips_pipeline.dut.flush_id_ex
+tb_mips_pipeline.dut.flush_ex_mem
+@28
+-
+----- Branch Predictor -----
+@8
+tb_mips_pipeline.dut.bp.ghr[3:0]
+tb_mips_pipeline.dut.prediction
+tb_mips_pipeline.dut.update_en
+tb_mips_pipeline.dut.actual_outcome
+@28
+-
+----- Forwarding -----
+@8
+tb_mips_pipeline.dut.forward_a[1:0]
+tb_mips_pipeline.dut.forward_b[1:0]
+@28
+-
+----- Register Results -----
+@8
+tb_mips_pipeline.dut.rf.regs[8][31:0]
+tb_mips_pipeline.dut.rf.regs[9][31:0]
+tb_mips_pipeline.dut.rf.regs[10][31:0]
+tb_mips_pipeline.dut.rf.regs[11][31:0]
+tb_mips_pipeline.dut.rf.regs[12][31:0]
+[pattern_trace] 1
+[pattern_trace] 0

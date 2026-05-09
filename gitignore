@@ -1,0 +1,13 @@
+## simulation outputs
+sim/mips_sim
+sim/*.vcd
+sim/*.lxt
+
+## OS junk
+.DS_Store
+Thumbs.db
+
+## editor
+*.swp
+*.swo
+.vscode/
